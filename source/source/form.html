@@ -21,7 +21,93 @@
       </nav>
       <img class="sedona-photo" src="https://via.placeholder.com/150x150" alt="Sedona">
     </header>
-    <main></main>
+    <main class="page-main">
+    <h1 class="visually-hidden">Отзыв</h1>
+      <section class="comment">
+      <header>
+        <h2 class="visually-hidden">Отзыв о посещении Седоны</h2>
+        <b class="comment_request">Оставьте свой отзыв</b>
+        <p>Помогите нашим отелям стать лучше!
+         Оставьте отзыв о них, а также о
+         посещенных вами
+         достопричечательностях</p>
+      </header>
+      <form class="comment_form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="form_fieldset">
+        <legend>Представьтесь:</legend>
+        <p>
+        <label class="fieldset_user" for="user-name">Имя:</label>
+        <input type="name" name="name" id="user-name" placeholder="Петр">
+       </p>
+        <p>
+        <label class="fieldset_user" for="user-surname">Фамилия:</label>
+        <input type="name" name="name" id="user-surname" placeholder="Иванов">
+       </p>
+        <p>
+        <label class="fieldset_user" for="user-fatherName">Отчество:</label>
+        <input type="name" name="name" id="user-fatherName" placeholder="Александрович">
+       </p>
+       </fieldset>
+       <fieldset class="form_fieldset">
+       <legend>Контактная информация:</legend>
+       <p>
+       <label class="fieldset_contact" for="user-phone">Контактный телефон*:</label>
+       <input type="name" name="phone" id="user-phone" placeholder="Введите телефон">
+      </p>
+      <p>
+       <label class="fieldset_contact" for="user-email">Электронная почта*:</label>
+       <input type="email" name="email" id="user-email" placeholder="Введите e-mail">
+      </p>
+    </fieldset>
+    <fieldset class="form_fieldset">
+       <legend>Ваше общее впечатление:</legend>
+      <ul>
+        <li>
+          <input class="visually-hidden fieldset_impression" type="radio" name="impression" id="impression-positive">
+          <label for="impression-positive">Скорее положительное</label>
+          <span></span>
+        </li>
+        <li>
+          <input class="visually-hidden fieldset_impression" type="radio" name="impression" id="impression-negative">
+          <label for="impression-negative">Скорее отрицательное</label>
+          <span></span>
+        </li>
+        <li>
+          <input class="visually-hidden fieldset_impression" type="radio" name="impression" id="difficult-answer">
+          <label for="difficult-answer">Затрудняюсь ответить</label>
+          <span></span>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form_fieldset">
+      <legend>Посещаемые достопримечательности:</legend>
+      <ul>
+        <li>
+          <input class="visually-hidden fieldset_attractions" type="checkbox" name="attractions" id="devil's-bridge">
+          <label for="devil's-bridge">Мост дьявола</label>
+        </li>
+        <li>
+          <input class="visually-hidden fieldset_attractions" type="checkbox" name="attractions" id="Mount-Bell">
+          <label for="Mount-Bell">Гора-Колокол</label>
+        </li>
+        <li>
+          <input class="visually-hidden fieldset_attractions" type="checkbox" name="attractions" id="Slide-park">
+          <label for="Slide-park">Слайд-парк</label>
+        </li>
+        <li>
+          <input class="visually-hidden fieldset_attractions" type="checkbox" name="attractions" id="Red-rocks">
+          <label for="Red-rocks">Красные скалы</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form_fieldset">
+      <legend>Опишите свои эмоции:</legend>
+      <textarea name="litter" rows="5">Опишите подробно все свои восторги</textarea>
+    </fieldset>
+      </form>
+      <button class="comment_btn" type="submit">Отправить отзыв</button>
+      </section>
+    </main>
     <footer class="page-footer">
      <span>#visitsedona</span>
       <ul class="social-list">
@@ -32,4 +118,5 @@
       <span>Разработано</span>
     </footer>
   </body>
+  <!--rjv-->
   </html>
