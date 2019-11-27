@@ -1,0 +1,22 @@
+@line:2px;
+@uppercase:uppercase;
+
+.set-font (@text-transform:@uppercase,@font-size:@line,@line-height:@line) {
+  font-size: @font-size;
+  line-height: @line-height;
+  text-transform: @uppercase;
+}
+
+.page-footer {
+  &--visitsedona {
+  .set-font(@uppercase,@line+19,@line+7);
+  font-weight: bold;
+ }
+  &--htmlacademy {
+  .set-font(@uppercase,@line+12,@line+7);
+  }
+}
+
+
+
+

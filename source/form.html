@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+     <header class="page-header">
+      <h1 class="visually-hidden">Sedona</h1>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="site-list__item site-list__item--active"><a>Форма отзыва</a></li>
+          <li class="site-list__item"><a>Html Academy</a></li>
+        </ul>
+      <a class="main-nav__logo">
+      </a>
+      </nav>
+      <div class="banner">
+        <img class="banner_img" src="./img/bg-back-mobile@1x.jpg" alt="Баннер Седона" width="768" height="389">
+      </div>
+    </header>
+    <main class="page-main">
+    <h1 class="visually-hidden">Отзыв</h1>
+      <section class="comment">
+        <h2 class="visually-hidden">Отзыв о посещении Седоны</h2>
+        <b class="comment_request">Оставьте свой отзыв</b>
+        <p class="comment_lead">Помогите нашим отелям стать лучше!
+         Оставьте отзыв о них, а также о
+         посещенных вами
+         достопричечательностях
+       </p>
+      <form class="comment_form form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="form__item  item">
+        <legend class="item__title">Представьтесь:</legend>
+        <p>
+        <label class="item__label" for="user-name">Имя:</label>
+        <input class="item__input" type="name" name="name" id="user-name" placeholder="Петр">
+       </p>
+        <p>
+        <label class="item__label" for="user-surname">Фамилия:</label>
+        <input class="item__input" type="name" name="name" id="user-surname" placeholder="Иванов">
+       </p>
+        <p>
+        <label class="item__label" for="user-fatherName">Отчество:</label>
+        <input class="item__input" type="name" name="name" id="user-fatherName" placeholder="Александрович">
+       </p>
+       </fieldset>
+       <fieldset class="form__item  item">
+       <legend class="item__title item__title--contacts">Контактная информация:</legend>
+       <p>
+       <label class="item__label  item__label--mobile" for="user-phone">Контактный телефон*:</label>
+       <input class="item__input item__input--tel" type="name" name="phone" id="user-phone" placeholder="Введите телефон">
+      </p>
+      <p>
+       <label class="item__label  item__label--mobile" for="user-email">Электронная почта*:</label>
+       <input class="item__input  item__input--email" type="email" name="email" id="user-email" placeholder="Введите e-mail">
+      </p>
+    </fieldset>
+    <fieldset class="form__item  item">
+       <legend class="item__title">Ваше общее впечатление:</legend>
+      <ul class="item__radio radio">
+        <li class="radio_option">
+          <input class="visually-hidden radio__input" type="radio" name="radio-group" id="good">
+          <label class="radio__label" for="good">Скорее положительное</label>
+          <span></span>
+        </li>
+        <li class="radio_option">
+          <input class="visually-hidden fieldset_impression" type="radio" name="radio-group" id="bad">
+          <label class="radio__label" for="bad">Скорее отрицательное</label>
+          <span></span>
+        </li>
+        <li class="radio_option">
+          <input class="visually-hidden fieldset_impression" type="radio" name="radio-group" id="middle">
+          <label class="radio__label" for="middle">Затрудняюсь ответить</label>
+          <span></span>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form__item  item">
+      <legend class="item__title item__title--visited">Посещаемые достопримечательности:</legend>
+      <ul class="item__checkbox checkbox">
+        <li class="checkbox_option">
+          <input class="visually-hidden fieldset_attractions" type="checkbox" name="checkbox_group" id="devil's-bridge">
+          <label class="checkbox__label" for="devil's-bridge">Мост дьявола</label>
+        </li>
+        <li class="checkbox_option">
+          <input class="visually-hidden checkbox__input" type="checkbox" name="checkbox_group" id="Mount-Bell">
+          <label class="checkbox__label" for="Mount-Bell">Гора-Колокол</label>
+        </li>
+        <li class="checkbox_option">
+          <input class="visually-hidden checkbox__input" type="checkbox" name="checkbox_group" id="Slide-park">
+          <label class="checkbox__label" for="Slide-park">Слайд-парк</label>
+        </li>
+        <li class="checkbox_option">
+          <input class="visually-hidden checkbox__input" type="checkbox" name="checkbox_group" id="Red-rocks">
+          <label class="checkbox__label" for="Red-rocks">Красные скалы</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form__item  item item--textarea">
+      <legend class="item__title">Опишите свои эмоции:</legend>
+      <textarea class="item__textarea" name="user-textarea" rows="5">Опишите подробно все свои восторги</textarea>
+    </fieldset>
+      </form>
+      <button class="form__item button" type="submit">Отправить отзыв</button>
+      <p class="form__item  form__item--note">* — обязательные поля</p>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <span class="page-footer--visitsedona">#visitsedona</span>
+      <ul class="social-list">
+        <li class="social-list_item"><a class="social-link social-list--twitter" href="https://twitter.com/htmlacademy_ru?lang=ru"><span class="visually-hidden">twitter</span></a></li>
+        <li class="social-list_item"><a class="social-link social-list--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">facebook</span></a></li>
+        <li class="social-list_item"><a class="social-link social-list--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a></li>
+      </ul>
+      <span class="page-footer--htmlacademy">Разработано</span>
+    </footer>
+  </body>
+  <!--rjv-->
+  </html>

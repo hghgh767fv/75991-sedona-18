@@ -1,0 +1,52 @@
+@line:2px;
+@uppercase:uppercase;
+
+.set-font (@text-transform:@uppercase,@font-size:@line,@line-height:@line) {
+  font-size: @font-size;
+  line-height: @line-height;
+  text-transform: @uppercase;
+}
+
+.set-margin(@margin-top:@line,@margin-bottom:@line){
+  margin-top: @margin-top;
+  margin-bottom: @margin-bottom;
+}
+
+.set-padding(@padding-top:@line,@padding-bottom:@line){
+  padding-top: @padding-top;
+  padding-bottom: @padding-bottom;
+}
+
+.advantage__slogan {
+  .set-font(@uppercase,@line*9,@line+7);
+}
+
+.advantage__intro {
+  .set-font(@uppercase,@line*7,@line+5);
+}
+
+.advantage {
+   &--blue {
+  .set-padding(@line*10,@line*0);
+
+  .set-font(@uppercase,@line*9,@line+7);
+  font-weight: 15;
+  list-style: none;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+  &--gray {
+   background-color: #eeeeee;
+  }
+  &--gray h2 {
+   .set-margin(@line*0,@line*0);
+   .set-font(@uppercase,@line*9,@line*9);
+  }
+    &--gray p {
+   .set-margin(@line*0,@line*0);
+   .set-font(@uppercase,@line*7,@line*9);
+  }
+}
+
+
