@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-     <header class="page-header">
-      <h1 class="visually-hidden">Sedona</h1>
-      <nav class="main-nav">
+      <header class="page-header">
+        <h1 class="visually-hidden">Sedona</h1>
+        <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="index.html">Главная</a></li>
@@ -31,52 +31,52 @@
         <h2 class="visually-hidden">Отзыв о посещении Седоны</h2>
         <b class="comment_request">Оставьте свой отзыв</b>
         <p class="comment_lead">Помогите нашим отелям стать лучше!
-         Оставьте отзыв о них, а также о
-         посещенных вами
-         достопричечательностях
+          Оставьте отзыв о них, а также о
+          посещенных вами
+          достопричечательностях
        </p>
       <form class="comment_form form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__item  item">
         <legend class="item__title">Представьтесь:</legend>
         <p>
-        <label class="item__label" for="user-name">Имя:</label>
+        <label class="item__label item--user" for="user-name">Имя:</label>
         <input class="item__input" type="name" name="name" id="user-name" placeholder="Петр">
        </p>
         <p>
-        <label class="item__label" for="user-surname">Фамилия:</label>
+        <label class="item__label item--user" for="user-surname">Фамилия:</label>
         <input class="item__input" type="name" name="name" id="user-surname" placeholder="Иванов">
        </p>
         <p>
-        <label class="item__label" for="user-fatherName">Отчество:</label>
+        <label class="item__label item--user" for="user-fatherName">Отчество:</label>
         <input class="item__input" type="name" name="name" id="user-fatherName" placeholder="Александрович">
        </p>
        </fieldset>
        <fieldset class="form__item  item">
        <legend class="item__title item__title--contacts">Контактная информация:</legend>
        <p>
-       <label class="item__label  item__label--mobile" for="user-phone">Контактный телефон*:</label>
-       <input class="item__input item__input--tel" type="name" name="phone" id="user-phone" placeholder="Введите телефон">
+       <label class="item__label  item--mobile" for="user-phone">Контактный телефон*:</label>
+       <input class="item__input item--tel telefon" type="name" name="phone" id="user-phone" placeholder="Введите телефон">
       </p>
       <p>
-       <label class="item__label  item__label--mobile" for="user-email">Электронная почта*:</label>
-       <input class="item__input  item__input--email" type="email" name="email" id="user-email" placeholder="Введите e-mail">
+       <label class="item__label  item--mobile" for="user-email">Электронная почта*:</label>
+       <input class="item__input  item--email" type="email" name="email" id="user-email" placeholder="Введите e-mail">
       </p>
     </fieldset>
     <fieldset class="form__item  item">
        <legend class="item__title">Ваше общее впечатление:</legend>
-      <ul class="item__radio radio">
+      <ul class="item--radio radio">
         <li class="radio_option">
-          <input class="visually-hidden radio__input" type="radio" name="radio-group" id="good">
+          <input class="visually-hidden radio__input" type="radio" name="radio-group" id="good" checked>
           <label class="radio__label" for="good">Скорее положительное</label>
           <span></span>
         </li>
         <li class="radio_option">
-          <input class="visually-hidden fieldset_impression" type="radio" name="radio-group" id="bad">
+          <input class="visually-hidden radio__input" type="radio" name="radio-group" id="bad">
           <label class="radio__label" for="bad">Скорее отрицательное</label>
           <span></span>
         </li>
         <li class="radio_option">
-          <input class="visually-hidden fieldset_impression" type="radio" name="radio-group" id="middle">
+          <input class="visually-hidden radio__input" type="radio" name="radio-group" id="middle">
           <label class="radio__label" for="middle">Затрудняюсь ответить</label>
           <span></span>
         </li>
@@ -84,9 +84,9 @@
     </fieldset>
     <fieldset class="form__item  item">
       <legend class="item__title item__title--visited">Посещаемые достопримечательности:</legend>
-      <ul class="item__checkbox checkbox">
+      <ul class="item--checkbox checkbox">
         <li class="checkbox_option">
-          <input class="visually-hidden fieldset_attractions" type="checkbox" name="checkbox_group" id="devil's-bridge">
+          <input class="visually-hidden checkbox__input" type="checkbox" name="checkbox_group" id="devil's-bridge">
           <label class="checkbox__label" for="devil's-bridge">Мост дьявола</label>
         </li>
         <li class="checkbox_option">
@@ -103,9 +103,9 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="form__item  item item--textarea">
+    <fieldset class="form__item  item">
       <legend class="item__title">Опишите свои эмоции:</legend>
-      <textarea class="item__textarea" name="user-textarea" rows="5">Опишите подробно все свои восторги</textarea>
+      <textarea class="item__textarea item--textarea" name="user-textarea">Опишите подробно все свои восторги</textarea>
     </fieldset>
       </form>
       <button class="form__item button" type="submit">Отправить отзыв</button>
@@ -119,8 +119,7 @@
         <li class="social-list_item"><a class="social-link social-list--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">facebook</span></a></li>
         <li class="social-list_item"><a class="social-link social-list--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a></li>
       </ul>
-      <span class="page-footer--htmlacademy">Разработано</span>
+      <span class="page-footer--htmlacademy developed-span">Разработано</span>
     </footer>
   </body>
-  <!--rjv-->
   </html>
