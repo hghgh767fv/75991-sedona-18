@@ -1,18 +1,9 @@
-@line:2px;
-@uppercase:uppercase;
-
-.set-font (@text-transform:@uppercase,@font-size:@line,@line-height:@line) {
-  font-size: @font-size;
-  line-height: @line-height;
-  text-transform: @uppercase;
-}
-
 .gallery {
   &--title {
-    .set-font (@uppercase,@line*9,@line*9);
+    .set-font (@uppercase, @line*9, @line*9);
   }
   &--lead {
-    .set-font (@uppercase,@line*7,@line*7);
+    .set-font (@uppercase, @line*7, @line*7);
     border-bottom: 1px solid #e5e5e5;
   }
 }
