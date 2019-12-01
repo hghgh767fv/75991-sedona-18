@@ -14,12 +14,8 @@
 .inner-list_item {
   display: block;
   position: relative;
-  padding-left: 40px;
 }
 
-.inner-list_item:first-child {
-  padding-top: 40px;
-}
 
 .inner-list_item:first-child::before {
   content: "";
@@ -55,4 +51,29 @@
 
   background-image: url(../img/icon-burger-mobile.svg);
   background-repeat: no-repeat;
+}
+
+@media(min-width: @tablet-width) {
+  .inner-list {
+   display: flex;
+   justify-content: space-between;
+   width: @tablet-width;
+  &--title {
+   .set-font (@uppercase,@line*9,@line+9);
+   text-align: center;
+  }
+  &--lead {
+   display: inline-block;
+   width: 210px;
+
+   .set-font (@uppercase,@line*7,@line+19);
+   text-align: center;
+  }
+ }
+}
+
+@media(min-width: @desktop-width) {
+  .inner-list {
+    width: @desktop-width;
+  }
 }

@@ -1,15 +1,31 @@
 .main-nav {
-  position: relative;
-  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 }
 
-.main-nav__logo {
+.main-nav__logo() {
   position: absolute;
   left: 900px;
   z-index: 2;
-
-  background-image: url(../img/logo-sedona-mobile.svg);
-  background-repeat: no-repeat;
   width: 102px;
   height: 84px;
+}
+
+@media(min-width: @tablet-width) {
+  .main-nav {
+  width: auto;
+  margin: 0 auto;
+  }
+  .main-nav__logo() {
+  z-index: 2;
+  width: 101.668px;
+  height: 83.985px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .main-nav__logo() {
+  width: 186px;
+  height: 96px;
+  }
 }

@@ -1,1 +1,55 @@
+.advantage__slogan {
+  .set-font(@uppercase,@line*9,@line+7);
+}
 
+.advantage__intro {
+  .set-font(@uppercase,@line*7,@line+5);
+}
+
+.advantage {
+  width: 320px;
+   &--blue h2{
+    .set-font(@uppercase,@line*9,@line*13);
+   }
+   &--blue {
+  .set-font(@uppercase,@line*7,@line*12);
+  color: #ffffff;
+  text-align: center;
+  padding: 0 20px;
+
+  background-color: #81b3d2;
+}
+  &--gray {
+   background-color: #eeeeee;
+   text-align: center;
+  }
+  &--gray h2 {
+   .set-margin(@line*0,@line*0);
+   .set-font(@uppercase,@line*9,@line*9);
+  }
+    &--gray p {
+   .set-margin(@line*0,@line*0);
+   .set-font(@uppercase,@line*7,@line*9);
+  }
+}
+
+@media(min-width: @tablet-width) {
+ .advantage {
+  width: @tablet-width;
+ }
+ .advantage_section {
+  display: flex;
+ }
+  .advantage--revers {
+  flex-direction: row-reverse;
+ }
+}
+
+@media(min-width: @desktop-width){
+ .advantage {
+  width: @desktop-width;
+ }
+ .advantage_section {
+  display: flex;
+ }
+}

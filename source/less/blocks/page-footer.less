@@ -6,23 +6,26 @@
 }
 
 .developed-span {
-  .set-font(@uppercase,@line+12,@line+7);
   display: inline-block;
   position: relative;
-  padding: 13px 50px 13px 25px; 
-}
-
-.developed-span::after {
-  content: "";
   width: 27px;
   height: 34px;
-  position: absolute;
-  right: 12px;
-  bottom: -2px;
+  padding: 13px 100px 13px 25px;
+
+  .set-font(@uppercase,@line+12,@line+7);
 
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
+  background-position: 120px 4px;
 }
 
+@media(min-width: @tablet-width) {
+ .page-footer {
+  display: flex;
+  width: @tablet-width;
+ }
+}
 
-
+@media(min-width: @desktop-width) {
+  width: @desktop-width;
+}
