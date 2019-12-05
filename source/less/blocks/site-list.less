@@ -1,21 +1,23 @@
 .site-list {
   padding: 0;
   margin: 0;
+  width: 320px;
   list-style: none;
   background-color: @bk-menu;
 }
 
 .site-list__item a {
   display: inline-block;
-  padding: 20px 0px;
+  padding: 10px 0;
 
-  font-size: 18px;
+  .set-font (@uppercase,@line*9,@line*20);
   font-weight: bold;
   color: #ffffff;
-  text-transform: uppercase;
 }
 
 .site-list__item  {
+  padding: 0;
+  margin: 0;
   text-align: center;
 
   border-bottom: 1px solid darken(@bk-menu,35%);
