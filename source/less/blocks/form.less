@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+&--note {
+ .set-font(@uppercase,@line*7,@line*13);
+}
+}
+
+@media(min-width: @tablet-width) {
+.form {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form__item:nth-of-type(3) {
+  order: -1;
+  flex-shrink: 1;
+  padding: 0;
+  width: 50%;
+}
+
+.form__item:nth-of-type(1) {
+  flex-shrink: 1;
+  padding: 0;
+
+  width: 50%;
+}
+}
+

@@ -22,34 +22,34 @@
       </a>
       </nav>
       <div class="banner">
-        <img class="banner_img" src="./img/bg-back-mobile@1x.jpg" alt="Баннер Седона" width="768" height="389">
+        <img class="banner_img" src="./img/bg-back-mobile@1x.jpg" alt="Баннер Седона" width="320" height="389">
       </div>
     </header>
     <main class="page-main">
-    <h1 class="visually-hidden">Отзыв</h1>
       <section class="comment">
-        <h2 class="visually-hidden">Отзыв о посещении Седоны</h2>
-        <b class="comment_request">Оставьте свой отзыв</b>
+        <h1 class="comment_request">Оставьте свой отзыв</h1>
         <p class="comment_lead">Помогите нашим отелям стать лучше!
           Оставьте отзыв о них, а также о
           посещенных вами
-          достопричечательностях
+          достопримечательностях
        </p>
       <form class="comment_form form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__item  item">
         <legend class="item__title">Представьтесь:</legend>
-        <p>
-        <label class="item__label item--user" for="user-name">Имя:</label>
-        <input class="item__input" type="name" name="name" id="user-name" placeholder="Петр">
-       </p>
-        <p>
-        <label class="item__label item--user" for="user-surname">Фамилия:</label>
-        <input class="item__input" type="name" name="name" id="user-surname" placeholder="Иванов">
-       </p>
-        <p>
-        <label class="item__label item--user" for="user-fatherName">Отчество:</label>
-        <input class="item__input" type="name" name="name" id="user-fatherName" placeholder="Александрович">
-       </p>
+        <div class="item__wrapper-fullname">
+         <div class="item__wrapper">
+          <label class="item__label" for="user-name">Имя*:</label>
+          <input class="item__input" id="user-name" type="text" name="user-name" placeholder="Петр">
+       </div>
+       <div class="item__wrapper">
+        <label class="item__label" for="user-surname">Фамилия*:</label>
+        <input class="item__input" id="user-surname" type="text" name="user-surname" placeholder="Иванов">
+       </div>
+       <div class="item__wrapper">
+        <label class="item__label  item__label--margin" for="user-patronymic">Отчество:</label>
+        <input class="item__input" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
+       </div>
+       </div>
        </fieldset>
        <fieldset class="form__item  item">
        <legend class="item__title item__title--contacts">Контактная информация:</legend>
@@ -105,11 +105,13 @@
     </fieldset>
     <fieldset class="form__item  item">
       <legend class="item__title">Опишите свои эмоции:</legend>
-      <textarea class="item__textarea item--textarea" name="user-textarea">Опишите подробно все свои восторги</textarea>
+      <textarea class="item__textarea item--textarea" cols="22" rows="7" name="user-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
     </fieldset>
       </form>
-      <button class="form__item button" type="submit">Отправить отзыв</button>
-      <p class="form__item  form__item--note">* — обязательные поля</p>
+    <div class="wrapper-note">
+      <button class="comment_button button" type="submit">Отправить отзыв</button>
+      <p class="form__item--note">* — обязательные поля</p>
+    </div>
       </section>
     </main>
     <footer class="page-footer">

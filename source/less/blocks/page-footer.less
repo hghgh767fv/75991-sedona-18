@@ -1,4 +1,7 @@
 .page-footer {
+  width: 320px;
+  text-align: center;
+
   &--visitsedona {
   .set-font(@uppercase,@line+19,@line+7);
   font-weight: bold;
@@ -6,26 +9,21 @@
 }
 
 .developed-span {
-  display: inline-block;
-  position: relative;
-  width: 27px;
-  height: 34px;
-  padding: 13px 100px 13px 25px;
-
   .set-font(@uppercase,@line+12,@line+7);
-
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 120px 4px;
 }
 
 @media(min-width: @tablet-width) {
  .page-footer {
   display: flex;
-  width: @tablet-width;
+  justify-content: space-between;
+  align-items: center;
+  width: 648px;
+  margin: 0 auto;
  }
 }
 
 @media(min-width: @desktop-width) {
-  width: @desktop-width;
+ .page-footer {
+  width: 960px;
+ }
 }
