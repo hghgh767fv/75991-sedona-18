@@ -1,7 +1,6 @@
 .banner {
   position: relative;
   display: block;
-  margin-top: 56px;
 }
 
 .banner::before {
@@ -9,24 +8,21 @@
   position: absolute;
   display: block;
   top: 90px;
-  left: 80px;
-  width: 460px;
-  height: 80px;
+  left: 20px;
+  width:282px;
+  height: 214px;
 
-  background-image: url(../img/text-sedona-index.svg);
+  background-image: url(../img/text-index-mobile.svg);
   background-repeat: no-repeat;
 }
 
-.banner::after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 200px;
-  left: 80px;
-  width: 460px;
-  height: 80px;
 
-  background-image: url(../img/text-sedona.svg);
-  background-repeat: no-repeat;
+
+@media(min-width: @tablet-width) {
+
+}
+
+@media(min-width: @desktop-width) {
+
 }
 

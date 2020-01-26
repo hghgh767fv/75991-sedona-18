@@ -1,13 +1,28 @@
 .gallery-list {
-  list-style: none;
-  &--title {
-    .set-font (@uppercase,@line*7,@line*7);
-  }
+ list-style: none;
+ padding: 0;
+
+&--title {
+ .set-font (@uppercase, @line*7, @line*12);
+}
+
+  &--author {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 12px;
+ }
+
   &--like {
+    display: block;
+    padding-bottom: 25px;
     font-weight: bold;
   }
 }
 
-.gallery-list_item {
-  border-bottom: 1px solid #e5e5e5;
+@media(min-width: @tablet-width) {
+
+}
+
+@media(min-width: @desktop-width) {
+
 }

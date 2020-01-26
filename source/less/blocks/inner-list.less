@@ -1,26 +1,4 @@
-.inner-list {
-  list-style: none;
-  &--title {
-    .set-font (@uppercase,@line*9,@line+9);
-  }
-  &--lead {
-    display: inline-block;
-    width: 210px;
-
-    .set-font (@uppercase,@line*7,@line+19);
-  }
-}
-
-.inner-list_item {
-  display: block;
-  position: relative;
-  padding-left: 40px;
-}
-
-.inner-list_item:first-child {
-  padding-top: 40px;
-}
-
+/*
 .inner-list_item:first-child::before {
   content: "";
   position: absolute;
@@ -55,4 +33,72 @@
 
   background-image: url(../img/icon-burger-mobile.svg);
   background-repeat: no-repeat;
+}
+*/
+
+.inner-list {
+ width: 280px;
+ margin: 0 20px;
+ padding: 0;
+ list-style: none;
+
+&--title {
+ margin: 0;
+ padding: 0;
+ padding-bottom: 10px;
+
+.set-font (@uppercase,@line*9,@line*13);
+}
+
+&--lead {
+ margin: 0;
+ padding: 0;
+
+ .set-font (@uppercase,@line*7,@line*10);
+}
+}
+
+.inner-list_item {
+  display: block;
+  position: relative;
+  padding: 30px 30px 0px 50px;
+  margin: 0;
+}
+
+.inner-list_item:nth-child(3) {
+  padding-bottom: 40px;
+}
+
+@media(min-width: @tablet-width) {
+.inner-list {
+ width: 100%;
+ margin: 0 auto;
+ padding-bottom: 65px;
+ display: flex;
+ text-align: center;
+
+&--title {
+ .set-font (@uppercase,@line*11,@line*13);
+ padding-bottom: 30px;
+}
+}
+}
+
+.inner-list_item:nth-child(3) {
+  padding-bottom: 0px;
+}
+
+.inner-list_item:nth-child(2) {
+ order: 1;
+}
+
+@media(min-width: @desktop-width) {
+.inner-list {
+ padding-bottom: 85px;
+
+&--title {
+ padding-top: 164px;
+}
+}
+
 }

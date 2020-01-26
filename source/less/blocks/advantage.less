@@ -1,1 +1,157 @@
+.advantage__slogan {
+ .set-font(@uppercase,@line*9,@line*13);
+ font-weight: bold;
+}
 
+.advantage__intro {
+ margin: 0;
+ margin-top: 30px;
+ text-align: center;
+
+ .set-font(@uppercase,@line*7,@line*13);
+}
+
+.advantage {
+ width: 320px;
+
+&--paragraph {
+ padding: 46px 0 25px 0;
+ margin: 0 25px;
+ text-align: center;
+}
+
+&--blue {
+ text-align: center;
+ padding: 40px 20px;
+ text-align: center;
+ color: #ffffff;
+ background-color: #81b3d2;
+}
+
+&--blue h2{
+ .set-font(@uppercase,@line*9,@line*13);
+}
+
+&--blue p {
+ .set-font(@uppercase,@line*7,@line*11);
+}
+
+&--gray {
+ width: 280px;
+ padding: 0 20px;
+
+ text-align: center;
+
+ background-color: #eeeeee;
+}
+
+&--gray h2 {
+ margin: 0;
+ padding-top: 30px;
+ padding-bottom: 20px;
+ .set-font(@uppercase,@line*9,@line*13);
+}
+
+&--gray p {
+ margin: 0;
+ padding-bottom: 30px;
+ padding-top: 20px;
+
+ .set-font(@uppercase,@line*7,@line*11);
+}
+}
+
+@media(min-width: @tablet-width) {
+.advantage {
+ width: @tablet-width;
+ margin: 0 auto;
+
+&--blue {
+  width:256px;
+}
+
+&--blue h2 {
+ .set-font(@uppercase,@line*11,@line*13);
+  padding: 0 35px;
+}
+
+&--blue p {
+ .set-font(@uppercase,@line*7,@line*11);
+   padding: 0 45px;
+}
+
+&--gray {
+  padding: 0;
+}
+
+&--gray h2 {
+ padding: 50px 60px 20px 60px;
+}
+
+&--gray p {
+padding: 30px 50px 50px;
+}
+}
+
+.advantage__slogan {
+ text-align: center;
+ padding: 0 100px;
+ .set-font(@uppercase,@line*11,@line*13);
+}
+
+.advantage_section {
+ display: flex;
+ }
+
+.advantage--revers {
+ flex-direction: row-reverse;
+}
+}
+
+@media(min-width: @desktop-width){
+.advantage {
+ width: @desktop-width;
+ margin: 0 auto;
+
+&--blue {
+ width:400px;
+ padding: 0;
+}
+
+&--blue h2 {
+ padding: 50px 120px 17px;
+ margin: 0;
+}
+
+&--blue p {
+ margin: 0;
+ padding: 30px 65px 0;
+}
+
+&--gray {
+ width:400px;
+}
+
+&--gray h2 {
+ padding: 50px 120px 17px;
+
+ .set-font(@uppercase,@line*11,@line*13);
+}
+
+&--gray p {
+ margin: 0;
+ padding: 30px 65px 70px;
+
+ .set-font(@uppercase,@line*7,@line*11);
+}
+
+&--paragraph {
+ padding: 46px 0 60px 0;
+}
+}
+
+.advantage__slogan {
+ padding: 0 300px;
+ .set-font(@uppercase,@line*11,@line*13);
+}
+}
