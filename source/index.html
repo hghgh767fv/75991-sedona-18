@@ -11,23 +11,23 @@
     <div class="container">
     <header class="page-header">
       <h1 class="visually-hidden">Sedona</h1>
-      <nav class="main-nav">
-        <!--<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>!-->
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active"><a>Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
           <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
           <li class="site-list__item"><a href="#">Html Academy</a></li>
         </ul>
-        <!--
-       <a class="main-nav__logo">
-         <picture>
-           <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
-           <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
-           <img class="main-nav__logo-img" src="./img/logo-sedona-mobile.svg" alt="Логотип Седона">
-         </picture>
-       </a>
-     -->
+         <a class="main-nav__logo">
+          <picture>
+           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" >
+           <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+           <img class="main-nav__logo-image" src="./img/logo-sedona-mobile.svg" width="101px" height="83px" alt="Логотип Седона">
+          </picture>
+         </a>
+      </div>
       </nav>
     </header>
     <main class="page-main">
@@ -44,7 +44,7 @@
        <div class="advantage_section">
         <div class=" advantage--blue">
           <h2>Настоящий городок</h2>
-          <span>№1</span>
+          <span>&ndash; №1  &ndash;</span>
           <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="advantage--image-section">
@@ -70,7 +70,7 @@
          <div class="advantage_section advantage--revers">
           <div class=" advantage--blue">
             <h2>Там есть мост дьявола</h2>
-            <span>№2</span>
+            <span>&ndash; №2 &ndash;</span>
             <p>Да, по нему можно пройти! Если вы осмелетесь, конечно</p>
           </div>
           <div class="advantage--image-section">
@@ -82,17 +82,17 @@
         <div class="advantage_item advantage_section">
         <div class="advantage--gray">
           <h2>Небольшая площадь</h2>
-          <span>№3</span>
+          <span>&ndash; №3 &ndash;</span>
           <p>Все интересные места находятся очень близко</p>
         </div>
         <div class="advantage--gray">
           <h2>Красивая дорога</h2>
-          <span>№4</span>
+          <span>&ndash; №4 &ndash;</span>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="advantage--gray">
           <h2>Мало туристов</h2>
-          <span>№5</span>
+          <span>&ndash; №5 &ndash;</span>
           <p>Большинсво едет в Гранд Каньен и толпится там</p>
         </div>
         </div>
@@ -118,5 +118,21 @@
       <span class="page-footer--htmlacademy developed-span">Разработано</span>
     </footer>
   </div>
+  <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
   </body>
   </html>

@@ -20,7 +20,11 @@
   height: 14px;
   background-image: url(../img/icon-twitter.svg);
   background-repeat: no-repeat;
-  }
+
+&:active {
+ opacity: 0.3;
+}
+}
 
   &--facebook {
   position: absolute;
@@ -30,6 +34,10 @@
   height: 19px;
   background-image: url(../img/icon-facebook.svg);
   background-repeat: no-repeat;
+
+&:active {
+ opacity: 0.3;
+}
   }
 
   &--youtube {
@@ -40,5 +48,17 @@
   height: 14px;
   background-image: url(../img/icon-youtube.svg);
   background-repeat: no-repeat;
-  }
+
+&:active {
+ opacity: 0.3;
+}
+}
+}
+
+.social-list_item:hover {
+ background-color: #669ec0;
+}
+
+.social-list_item:active {
+ background-color: #5496bd;
 }

@@ -6,21 +6,64 @@
  .set-font (@uppercase, @line*7, @line*12);
 }
 
-  &--author {
+&--author {
   margin: 10px 0;
   font-size: 14px;
   line-height: 12px;
  }
 
   &--like {
-    display: block;
-    padding-bottom: 25px;
-    font-weight: bold;
-  }
+ position: relative;
+
+ display: block;
+ padding-top: 5px;
+ padding-bottom: 25px;
+ padding-left: 35px;
+
+ font-weight: bold;
+
+&::before {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  left: 0px;
+
+  width: 22px;
+  height: 20px;
+
+  background-image: url(../img/icon-like.svg);
+  opacity: 0.3;
+  background-repeat: no-repeat;
+}
+}
+}
+
+.gallery-list_item {
+ position: relative;
+ margin-top: 24px;
+
+&::after {
+ content: "";
+
+ position: absolute;
+ bottom: 0;
+ right: -20px;
+
+ width: 320px;
+ height: 1px;
+
+ background-color: #e5e5e5;
+}
 }
 
 @media(min-width: @tablet-width) {
 
+.gallery-list_item{
+&::after {
+ display: none;
+}
+}
 }
 
 @media(min-width: @desktop-width) {

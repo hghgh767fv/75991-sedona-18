@@ -37,12 +37,33 @@
 }
 
 &--gray {
+ position: relative;
+
  width: 280px;
  padding: 0 20px;
 
  text-align: center;
 
  background-color: #eeeeee;
+
+&:nth-child(2)::before,
+&:nth-child(2)::after, {
+ content: "";
+
+ position: absolute;
+ right: 20px;
+ width: 280px;
+ height: 1px;
+
+ background-color: #d6d6d6;
+}
+&::after {
+ top: 0;
+}
+
+&::before {
+ bottom: 0;
+}
 }
 
 &--gray h2 {
@@ -81,7 +102,12 @@
 }
 
 &--gray {
-  padding: 0;
+ padding: 0;
+
+&::before,
+&::after {
+ display: none;
+}
 }
 
 &--gray h2 {

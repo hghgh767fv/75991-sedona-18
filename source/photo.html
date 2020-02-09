@@ -10,14 +10,14 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Sedona</h1>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav_wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a  href="index.html">Главная</a></li>
           <li class="site-list__item site-list__item--active"><a>Фото и видео</a></li>
           <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="site-list__item"><a>Html Academy</a></li>
+          <li class="site-list__item"><a href="#">Html Academy</a></li>
         </ul>
        </div>
       <a class="main-nav__logo">
@@ -94,6 +94,22 @@
       </ul>
       <span class="page-footer--htmlacademy developed-span">Разработано</span>
     </footer>
+        <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
   </body>
   </html>
 

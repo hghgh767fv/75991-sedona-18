@@ -3,8 +3,6 @@
  margin: 0 20px;
  padding: 0;
 
- border: 1px solid yellow;
-
 &--title {
  padding-top: 24px;
 
@@ -13,12 +11,27 @@
 }
 
 &--lead {
+ position: relative;
  display: block;
  margin:0 3px;
  padding-bottom: 24px;
+
  .set-font (@uppercase, @line*7, @line*12);
  text-align: center;
- }
+
+&::after {
+ content: "";
+
+ position: absolute;
+ bottom: 0;
+ right: -20px;
+
+ width: 320px;
+ height: 1px;
+
+ background-color: #e5e5e5;
+}
+}
 }
 
 
