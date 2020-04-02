@@ -1,8 +1,7 @@
 .comment {
  margin: 0 20px;
  padding: 0;
- width: 280px;
- border: 1px solid black;
+ width: auto;
 }
 
 .comment_request {
@@ -17,22 +16,9 @@
  display: block;
  padding-bottom: 22px;
  margin: 0;
- position: relative;
 
  .set-font(@uppercase,@line*7,@line*12);
  text-align: center;
-}
-
-.comment_lead::after {
- content: "";
- width: 320px;
- height: 1px;
-
- position: absolute;
- bottom: 0px;
- right: -20px;
-
- background-color: @bk-gray;
 }
 
 .comment_button {
@@ -40,10 +26,10 @@
 }
 
 @media(min-width: @tablet-width) {
- .comment {
-  margin: 0 60px;
-  padding: 0;
-  width: 648px;
+.comment {
+ margin: 0 60px;
+ width: 90%;
+ max-width: 1042px;
 }
 
 .comment_button {
@@ -67,7 +53,6 @@
 .comment {
  margin: 0 120px;
  padding: 0;
- width: 960px;
 }
 
 .comment_lead {

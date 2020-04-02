@@ -1,6 +1,7 @@
 .advantage__slogan {
  .set-font(@uppercase,@line*9,@line*13);
  font-weight: bold;
+ margin: 0;
 }
 
 .advantage__intro {
@@ -11,13 +12,28 @@
  .set-font(@uppercase,@line*7,@line*13);
 }
 
+.advantage-item__image {
+ display: block;
+}
+
 .advantage {
- width: 320px;
+ width: auto;
 
 &--paragraph {
- padding: 46px 0 25px 0;
+ padding: 0;
  margin: 0 25px;
  text-align: center;
+}
+
+&--triangle {
+ background-image: url(../img/bg-triangle.svg);
+ background-repeat: no-repeat;
+ background-position: 50% top;
+ background-size: 110%, auto;
+}
+
+&--triangle h2 {
+ padding-top: 43px;
 }
 
 &--blue {
@@ -37,39 +53,15 @@
 }
 
 &--gray {
- position: relative;
-
- width: 280px;
- padding: 0 20px;
-
  text-align: center;
-
  background-color: #eeeeee;
-
-&:nth-child(2)::before,
-&:nth-child(2)::after, {
- content: "";
-
- position: absolute;
- right: 20px;
- width: 280px;
- height: 1px;
-
- background-color: #d6d6d6;
-}
-&::after {
- top: 0;
-}
-
-&::before {
- bottom: 0;
-}
 }
 
 &--gray h2 {
  margin: 0;
  padding-top: 30px;
  padding-bottom: 20px;
+
  .set-font(@uppercase,@line*9,@line*13);
 }
 
@@ -84,11 +76,16 @@
 
 @media(min-width: @tablet-width) {
 .advantage {
- width: @tablet-width;
- margin: 0 auto;
+ width: 100%;
+ max-width: 1042px;
+
+&--paragraph {
+ margin: 50px 0;
+}
 
 &--blue {
-  width:256px;
+  width: 256px;
+  padding: 0;
 }
 
 &--blue h2 {
@@ -99,6 +96,10 @@
 &--blue p {
  .set-font(@uppercase,@line*7,@line*11);
    padding: 0 45px;
+}
+
+&--triangle {
+ background-image: none;
 }
 
 &--gray {
@@ -136,7 +137,6 @@ padding: 30px 50px 50px;
 
 @media(min-width: @desktop-width){
 .advantage {
- width: @desktop-width;
  margin: 0 auto;
 
 &--blue {
@@ -170,14 +170,10 @@ padding: 30px 50px 50px;
 
  .set-font(@uppercase,@line*7,@line*11);
 }
-
-&--paragraph {
- padding: 46px 0 60px 0;
-}
 }
 
 .advantage__slogan {
- padding: 0 300px;
+ padding: 0 200px;
  .set-font(@uppercase,@line*11,@line*13);
 }
 }

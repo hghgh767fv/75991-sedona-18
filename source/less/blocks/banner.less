@@ -1,28 +1,89 @@
 .banner {
-  position: relative;
-  display: block;
+ margin: 0;
+ margin-bottom: 44px;
+ width: 100%;
+ min-height: 389px;
+ background-color: #81b3d2;
+ background-image: url(../img/bg-intro-triangle-mobile.svg), url("../img/bg-back-mobile@1x.jpg");
+ background-repeat: no-repeat;
+ background-position: 50% bottom;
+ background-size: 110%, auto;
+ text-align: center;
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+ background-color: #81b3d2;
+ background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+ background-repeat: no-repeat;
+ background-position: 50% bottom;
+ background-size: 110%, auto 389px;
+}
 }
 
-.banner::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 90px;
-  left: 20px;
-  width:282px;
-  height: 214px;
-
-  background-image: url(../img/text-index-mobile.svg);
-  background-repeat: no-repeat;
+.banner--small {
+  min-height: 158px;
 }
 
+.banner_img {
+  margin-top: 90px;
+  width: 60%;
+}
 
+.banner--small .banner_img {
+  width: 60%;
+  margin-top: 52px;
+}
 
 @media(min-width: @tablet-width) {
+.banner {
+  width: @tablet-width;
+  margin: 0 auto;
+  min-height: 518px;
+  background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+  background-position: 50% bottom;
+  background-size: auto, auto;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+   background-color: #81b3d2;
+   background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+   background-repeat: no-repeat;
+   background-position: 50% bottom;
+   background-size: auto, auto 518px;
+  }
+ }
+
+.banner_img {
+ width: 460px;
+ margin-top: 77px;
+ }
+
+.banner--small {
+ margin-bottom: 75px;
+ min-height: 290px;
+}
+
+.banner--small .banner_img {
+  width: 460px;
+  margin-top: 95px;
+}
 }
 
 @media(min-width: @desktop-width) {
+.banner {
+  width: @desktop-width;
+  background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
 
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+ background-color: #81b3d2;
+ background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
+ background-repeat: no-repeat;
+ background-position: 50% bottom;
+ background-size: auto, auto 518px;
+  }
+ }
+
+.banner--small {
+ min-height: 301px;
+ margin-bottom: 112px;
+}
 }
 

@@ -1,8 +1,12 @@
 .main-nav {
   position: relative;
 
-  margin-bottom: 56px;
-  width: 320px;
+  width: auto;
+}
+
+.main-nav__logo {
+ display: block;
+ min-height: 56px;
 }
 
 .main-nav__logo-image {
@@ -20,7 +24,7 @@
 
 .main-nav__toggle {
  position: absolute;
- bottom: -56px;
+ top: 0;
  right: 0;
  z-index: 2;
 
@@ -102,22 +106,34 @@
 
 .main-nav__wrapper {
  display: flex;
+ justify-content: space-between;
+
  margin: 0 auto;
+ width: 90%;
+ max-width: 1042px;
 }
 
 .main-nav__toggle {
-  display: none;
+ display: none;
 }
 
-.main-nav__logo-image {
+.main-nav__logo {
+ position: absolute;
+ top: 0;
+ right: 0;
+ left: 0;
+ margin: 0 auto;
  width: 101px;
- height: 83px;
 }
 }
 
 @media(min-width: @desktop-width) {
 .main-nav__logo-image {
- width: 186px;
+ width: 187px;
  height: 96px;
+}
+
+.main-nav__logo {
+ width: 187px;
 }
 }

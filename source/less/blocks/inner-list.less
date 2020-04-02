@@ -37,9 +37,10 @@
 */
 
 .inner-list {
- width: 280px;
- margin: 0 20px;
+ width: auto;
  padding: 0;
+ position: relative;
+
  list-style: none;
 
 &--title {
@@ -56,25 +57,59 @@
 
  .set-font (@uppercase,@line*7,@line*10);
 }
+
+.inner-list_item:nth-child(3) {
+ padding-bottom: 40px;
+}
+}
+
+.inner-list__icon {
+  position: absolute;
+  fill: #81b3d2;
+}
+
+.inner-list__icon--house {
+  top: 35px;
+  left: 20px;
+}
+
+.inner-list__icon--gift {
+  top: 135px;
+  left: 25px;
+}
+
+.inner-list__icon--burger {
+  top: 230px;
+  left: 20px;
 }
 
 .inner-list_item {
   display: block;
-  position: relative;
-  padding: 30px 30px 0px 50px;
+  padding: 30px 30px 0px 70px;
   margin: 0;
 }
 
-.inner-list_item:nth-child(3) {
-  padding-bottom: 40px;
+.inner-list__icon--house-tablet {
+ display: none;
+}
+
+.inner-list__icon--gift-tablet {
+ display: none;
+}
+
+.inner-list__icon--burger-tablet {
+ display: none;
 }
 
 @media(min-width: @tablet-width) {
 .inner-list {
- width: 100%;
- margin: 0 auto;
- padding-bottom: 65px;
  display: flex;
+ padding-top: 130px;
+
+ width: 90%;
+ max-width: 1042px;
+ margin: 0 auto;
+
  text-align: center;
 
 &--title {
@@ -82,6 +117,9 @@
  padding-bottom: 30px;
 }
 }
+
+.inner-list_item {
+ padding: 30px 25px 60px 25px;
 }
 
 .inner-list_item:nth-child(3) {
@@ -92,13 +130,51 @@
  order: 1;
 }
 
+.inner-list__icon--house {
+ display: none;
+}
+
+.inner-list__icon--gift {
+ display: none;
+}
+
+.inner-list__icon--burger {
+ display: none;
+}
+
+.inner-list__icon--house-tablet {
+  display: block;
+  top: 60px;
+  left: 80px;
+}
+
+.inner-list__icon--gift-tablet {
+  display: block;
+  top: 60px;
+  left: 545px;
+}
+
+.inner-list__icon--burger-tablet {
+  display: block;
+  top: 60px;
+  left: 315px;
+}
+
+}
+
 @media(min-width: @desktop-width) {
-.inner-list {
- padding-bottom: 85px;
-
-&--title {
- padding-top: 164px;
-}
+.inner-list__icon--house-tablet {
+  top: 60px;
+  left: 120px;
 }
 
+.inner-list__icon--gift-tablet {
+  top: 60px;
+  left: 760px;
+}
+
+.inner-list__icon--burger-tablet {
+  top: 60px;
+  left: 440px;
+}
 }

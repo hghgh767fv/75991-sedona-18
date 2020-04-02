@@ -1,0 +1,87 @@
+  <section class="comment">
+        <h1 class="comment_request">Оставьте свой отзыв</h1>
+        <p class="comment_lead">Помогите нашим отелям стать лучше!
+          Оставьте отзыв о них, а также о
+          посещенных вами
+          достопримечательностях
+       </p>
+      <form class="comment_form form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="form__item  item">
+        <legend class="item__title">Представьтесь:</legend>
+        <div class="item__wrapper-fullname">
+         <div class="item__wrapper">
+          <label class="item__label" for="user-name">Имя*:</label>
+          <input class="item__input" id="user-name" type="text" name="user-name" placeholder="Петр">
+       </div>
+       <div class="item__wrapper">
+        <label class="item__label" for="user-surname">Фамилия*:</label>
+        <input class="item__input" id="user-surname" type="text" name="user-surname" placeholder="Иванов">
+       </div>
+       <div class="item__wrapper">
+        <label class="item__label  item__label--margin" for="user-patronymic">Отчество:</label>
+        <input class="item__input" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
+       </div>
+       </div>
+       </fieldset>
+       <fieldset class="form__item  item">
+       <legend class="item__title item__title--contacts">Контактная информация:</legend>
+       <p>
+       <label class="item__label  item--mobile" for="user-phone">Контактный телефон*:</label>
+       <input class="item__input item--tel telefon" type="name" name="phone" id="user-phone" placeholder="Введите телефон">
+      </p>
+      <p>
+       <label class="item__label  item--mobile" for="user-email">Электронная почта*:</label>
+       <input class="item__input  item--email" type="email" name="email" id="user-email" placeholder="Введите e-mail">
+      </p>
+    </fieldset>
+    <fieldset class="form__item  item">
+       <legend class="item__title">Ваше общее впечатление:</legend>
+      <ul class="item--radio radio">
+        <li class="radio_option">
+          <input class="visually-hidden radio__input" type="radio" name="radio-group" id="good" checked>
+          <label class="radio__label" for="good">Скорее положительное</label>
+          <span></span>
+        </li>
+        <li class="radio_option">
+          <input class="visually-hidden radio__input" type="radio" name="radio-group" id="bad">
+          <label class="radio__label" for="bad">Скорее отрицательное</label>
+          <span></span>
+        </li>
+        <li class="radio_option">
+          <input class="visually-hidden radio__input" type="radio" name="radio-group" id="middle">
+          <label class="radio__label" for="middle">Затрудняюсь ответить</label>
+          <span></span>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form__item  item">
+      <legend class="item__title item__title--visited">Посещаемые достопримечательности:</legend>
+      <ul class="item--checkbox checkbox">
+        <li class="checkbox_option">
+          <input class="visually-hidden checkbox__input" type="checkbox" name="checkbox_group" id="devil's-bridge">
+          <label class="checkbox__label" for="devil's-bridge">Мост дьявола</label>
+        </li>
+        <li class="checkbox_option">
+          <input class="visually-hidden checkbox__input" type="checkbox" name="checkbox_group" id="Mount-Bell">
+          <label class="checkbox__label" for="Mount-Bell">Гора-Колокол</label>
+        </li>
+        <li class="checkbox_option">
+          <input class="visually-hidden checkbox__input" type="checkbox" name="checkbox_group" id="Slide-park">
+          <label class="checkbox__label" for="Slide-park">Слайд-парк</label>
+        </li>
+        <li class="checkbox_option">
+          <input class="visually-hidden checkbox__input" type="checkbox" name="checkbox_group" id="Red-rocks">
+          <label class="checkbox__label" for="Red-rocks">Красные скалы</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form__item  item">
+      <legend class="item__title">Опишите свои эмоции:</legend>
+      <textarea class="item__textarea item--textarea" cols="22" rows="7" name="user-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+    </fieldset>
+      </form>
+    <div class="wrapper-note">
+      <a class="comment_button button" href="#">Отправить отзыв</a>
+      <p class="form__item--note">* — обязательные поля</p>
+    </div>
+      </section>

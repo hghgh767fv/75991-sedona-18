@@ -1,6 +1,6 @@
 .button {
  display: block;
- padding: 20px 0;
+ padding: 16px 0;
 
  .set-font (@uppercase,@line*11,@line*13);
  font-weight: bold;
@@ -8,6 +8,14 @@
 
  background-color: #81b3d2;
  border: none;
+
+ &:hover {
+  background-color: #669ec0;
+ }
+ &:active {
+ color: #88b6d1;
+ background-color: #5496bd;
+ }
 }
 
 @media(min-width: @tablet-width) {
